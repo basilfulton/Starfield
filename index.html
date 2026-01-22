@@ -204,8 +204,8 @@
                 this.originX = canvas.width / 2 + Math.cos(angle) * spread;
                 this.originY = canvas.height / 2 + Math.sin(angle) * spread;
                 this.z = randomZ ? Math.random() * canvas.width : canvas.width;
-                // 5% chance to be a little man
-                this.isMan = Math.random() < 0.05;
+                // 25% chance to be a little man
+                this.isMan = Math.random() < 0.25;
                 // Random spin speed and direction for men
                 this.spinSpeed = (Math.random() - 0.5) * 0.2;
                 this.rotation = Math.random() * Math.PI * 2;
